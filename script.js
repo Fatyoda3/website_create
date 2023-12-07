@@ -26,8 +26,4 @@ div.style.marginLeft = "250px";
 div.style.border = " 10px solid orange";
 
 
-
-
-
-
 body.style.backgroundColor = "#0e0e00";
