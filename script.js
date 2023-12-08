@@ -30,21 +30,18 @@ let x = document.createElement("div");
 
 body.appendChild(x);
 
-x.innerHTML = " hello<h1> heaven or hell it's all the same ";
+x.innerHTML = " hello<h1> heaven or hell it's all the same</h> ";
 
 x.style.color = "orange";
 
 x.style.width = "340px";
-let m = 0;
+
 x.addEventListener("click", function () {
   
-  m++;
+  
 
   console.log("fuck the police ");
 
   x.innerText = "fuck the police ";
 
-  if (m % 2 == 0) {
-    x.innerText = "sexy police ";
-  }
 });
