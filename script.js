@@ -35,13 +35,26 @@ x.innerHTML = " hello<h1> heaven or hell it's all the same</h> ";
 x.style.color = "orange";
 
 x.style.width = "340px";
-
+let m = 0;
 x.addEventListener("click", function () {
-  
-  
+  m++;
 
   console.log("fuck the police ");
 
   x.innerText = "fuck the police ";
-
+  
+  if (m % 2 == 0) {
+    x.innerText = "sexy police ";
+  }
 });
+
+
+let Name = document.createElement("button");
+
+body.appendChild(Name);
+
+
+Name.innerText = "hello ";
+let changeColor = ()=> Name.style.color="red";
+
+Name.addEventListener("click", changeColor)
