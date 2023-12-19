@@ -15,10 +15,10 @@ body {
 
 #input {
   background-image: linear-gradient(
-    to bottom left,
-    rgb(145, 194, 112),
+    to bottom right,
+    rgb(244, 145, 244),
     rgb(237, 237, 161),
-    rgb(244, 145, 244)
+    rgb(145, 194, 112)
   );
   -moz-appearance: textfield;
 
