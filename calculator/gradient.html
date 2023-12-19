@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gradient</title>
+    <link rel="stylesheet" href="gradient.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="rec">
+      <input  readonly id="input" placeholder="enter" />
+      <div class="button">
+        <button class="inp" onclick="AppendToDisplay('1')">1</button>
+        <button class="inp" onclick="AppendToDisplay('2')">2</button>
+        <button class="inp" onclick="AppendToDisplay('3')">3</button>
+        <button class="inp" onclick="AppendToDisplay('+')">+</button>
+        <br />
+        <button class="inp" onclick="AppendToDisplay('4')">4</button>
+        <button class="inp" onclick="AppendToDisplay('5')">5</button>
+        <button class="inp" onclick="AppendToDisplay('6')">6</button>
+        <button class="inp" onclick="AppendToDisplay('-')">-</button>
+        <br />
+        <button class="inp" onclick="AppendToDisplay('7')">7</button>
+        <button class="inp" onclick="AppendToDisplay('8')">8</button>
+        <button class="inp" onclick="AppendToDisplay('9')">9</button>
+        <button class="inp" onclick="AppendToDisplay('/')">/</button>
+
+        <br />
+
+        <button class="inp" onclick="AppendToDisplay('0')">0</button>
+
+        <button class="inp" onclick="ClearDisplay()">C</button>
+
+        <button class="inp" onclick="AppendToDisplay('.')">.</button>
+
+        <button class="inp" onclick="AppendToDisplay('*')">*</button>
+        <br />
+        <button class="inp" id="equal" onclick="CalculateDisplay()">=</button>
+      </div>
+    </div>
+  </body>
+</html>
