@@ -1,0 +1,25 @@
+@keyframes leftSlide {
+  from {
+    rotate: 0;
+  }
+
+  to {
+    rotate: 320deg;
+  }
+}
+@keyframes right {
+  from {
+    transform-origin: bottom;
+  }
+  to {
+    transform-origin: top;
+  }
+}
+.animate {
+  animation: leftSlide 1s ease-in-out;
+
+}
+
+.x{
+    background-color: rgba(220, 136, 136, 0.655);
+}
