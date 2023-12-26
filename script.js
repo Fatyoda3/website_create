@@ -39,7 +39,21 @@ let bSort = (high, arr) => {
   }
 };
 
-bSort(high, x);
+/*bSort(high, x);
 x.forEach((element) => {
   console.log(element);
 });
+*/
+
+let LinearSearch = (key, high,arr) => {
+  for (let i = 0; i < high; i++) {
+    if (arr[i] === key) {
+      console.log("found ");
+      return i;
+    }
+  }
+  return -1;
+};
+
+
+console.log(LinearSearch(78,high,x));
