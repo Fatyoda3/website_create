@@ -194,3 +194,31 @@ if ("") {
 
     */
 
+// expression can be assigned to a variable
+// statement a bigger piece of code
+
+//ternary operator
+/* 
+let marks =12;
+
+let result = marks > 40 ? true : false;
+
+
+console.log("result is ", result); */
+
+// ternary operator made out of three parts
+/*declare variableName  = logical comparison ? if true execute this : if false execute this
+ 
+they can call functions as well which is great 
+but they are limited to simple logic
+no they can do logical operator as well nice && || 
+*/
+/* 
+let hello = () => console.log("hello ");
+
+let bye = () => console.log("bye");
+
+let m =1;
+
+m > 3 || true ? hello() : bye();
+ */
