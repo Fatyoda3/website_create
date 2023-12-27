@@ -10,8 +10,31 @@
     <link rel="stylesheet" href="style.css" />
 
     <script src="advance.js" defer></script>
+    <style>
+      #Goal {
+        font-size: 33vh;
+
+        /*this is flex use to center the content of the h1 heading*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /*added the image as color of the  text instead of a color */
+
+        background-image: url(https://images.pexels.com/photos/255377/pexels-photo-255377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+        background-size: cover;
+        /* background-clip: text; it hides the thing but when color is set with 
+        transparency it appears */
+        background-clip: text;
+
+        color: hsla(195, 97%, 69%, 0.512);
+        text-transform: capitalize;
+      }
+    </style>
   </head>
-  <body>
-    <button class="animate x">hello world</button>
+  <body style="background-color: black">
+    <!-- <button class="animate x">hello world</button> -->
+
+    <h1 id="Goal">I'm learning javascript .</h1>
   </body>
 </html>
