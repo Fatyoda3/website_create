@@ -79,7 +79,7 @@ let sibling1 = document.querySelector('#sibling1'); */
 
 //-------------------------------******-------------------------------------
 // dom element modification
-
+/* 
 let paraGraph = document.querySelector("#para");
 
 //console.log(paraGraph.firstElementChild.textContent);//works when targets the div
@@ -100,3 +100,26 @@ paraGraph.style.color = "red";
 let hello = document.querySelector("#hello");
 
 hello.style.color = "green";
+
+
+
+
+let mango = document.querySelector('#mango');
+
+//mango gets a class of tasty 
+mango.classList.add('tasty');
+// mango gets removed 
+mango.classList.remove('tasty');
+ */
+
+//DOM element creation
+
+
+const body = document.body;
+
+let div = document.createElement('div');
+
+
+body.appendChild(div);
+div.innerText = 'hello world ';
+div.style.fontSize = '64px';
