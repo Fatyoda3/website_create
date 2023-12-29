@@ -1,7 +1,7 @@
 "use strict";
 
 // get elements by tag name. returns an array of html collection
-
+/* 
 let h1 = document.getElementsByTagName("h1");
 
 //console.log(h1);
@@ -40,7 +40,7 @@ let AnchorTags = document.querySelectorAll(".name");
 
 //select by Id
 
-let AnchorTagId = document.querySelectorAll("#name");
+/*let AnchorTagId = document.querySelectorAll("#name");
 
 //console.log("a with id ", AnchorTagId);
 
@@ -65,14 +65,38 @@ let sibling0 = document.querySelector('#sibling0');
 //                                  ||here we get the sibling1
 
 
-let sibling1 = document.querySelector('#sibling1');
+let sibling1 = document.querySelector('#sibling1'); */
 
 //console.log(sibling1.previousSibling.previousSibling);// prev sibling
 
-// better way 
+// better way
 
 //console.log(sibling1.previousElementSibling);
 // returns the element with a tag or content
 
 //console.log(sibling0.nextElementSibling);
 // returns the element with a tag or content
+
+//-------------------------------******-------------------------------------
+// dom element modification
+
+let paraGraph = document.querySelector("#para");
+
+//console.log(paraGraph.firstElementChild.textContent);//works when targets the div
+
+
+//appending a tag in the div with class of Para
+
+//paraGraph.innerHTML += '<a href = "#"id = "hello"> raja ji</a>';
+
+//appending a tag in the loremText id based paragraph p tag
+
+paraGraph.innerHTML += '<a href = "#"id = "hell"> raja ji</a>';
+
+//paraGraph.style.color = "hsl(60%,5%,85%)";
+
+paraGraph.style.color = "red";
+
+let hello = document.querySelector("#hello");
+
+hello.style.color = "green";
