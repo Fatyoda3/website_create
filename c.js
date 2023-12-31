@@ -6,15 +6,19 @@ let hello;
 
 let binarySearch;
 
+let LinearSearch;
+
 const main = () => {
   //declaring prototype function at top and creating body at bottom
   let x = [];
 
-  for (let i = 0; i < 10 * 10 * 1000; i++) x.push(i * 2);
+  for (let i = 0; i < 10 * 10000 * 1000; i++) x.push(i*2 );
 
-  console.log(binarySearch(x, -4));
+  console.log(binarySearch(x, 4));
 
-  hello("John");
+  // hello("John");
+
+  console.log(LinearSearch(x, 85));
 };
 
 hello = (name) => {
@@ -36,6 +40,21 @@ binarySearch = (array, key) => {
     else high = mid - 1;
   }
   return null; //if element not found return null because -1 not great
+};
+
+LinearSearch = (array, key) => {
+  let l = array.length;
+
+  for (let i = l; i >= 0; i--) {
+    if (array[i] == key) 
+    {
+      console.log("found the -->", key);
+      return i;
+    }
+
+  }
+
+  return null;
 };
 
 main();
