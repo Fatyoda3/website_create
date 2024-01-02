@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  width: 10rem;
+  height: 12rem;
+
+  border: 3px rgb(0, 0, 0) solid;
+
+  border-radius: 24px;
+
+  background-image: -moz-linear-gradient(
+    rgb(155, 181, 110),
+    rgb(159, 124, 124),
+    rgb(111, 158, 195)
+  );
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+nav ul {
+  list-style: none;
+  font: 18px "Gill sans" bolder;
+}
+
+
+
+
+
+.bottom{
+    margin: auto;
+    position:sticky;
+
+    background-color: black;
+
+    height: 10rem;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+
+    
+}
