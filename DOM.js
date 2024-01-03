@@ -217,7 +217,7 @@ button.addEventListener("click", function () {
   console.log("hello world");
 });
  */
-
+/* 
 const timeStamp = document.createElement("p");
 
 const form = document.querySelector("#form");
@@ -246,4 +246,35 @@ const heading = document.querySelector('#Goal');
 heading.addEventListener("mouseover",()=>{
   heading.style.color = "red";
 
-})
+}) */
+
+const person = {
+  name: "raj",
+  age: 30,
+  isMarried: true,
+
+  ageN: () => {
+    console.log((person.age += 1));
+    return;
+  },
+  boolCheck: () => {
+    if (person.isMarried) {
+      person.isMarried = false;
+    }
+    console.log(person.isMarried);
+    console.log(person.x);
+    return;
+  },
+  x: 42,
+};
+
+person.ageN();
+person.boolCheck();
+
+let child = {
+  isMarried: true,
+};
+
+child.boolCheck = person.boolCheck;
+
+child.boolCheck();
