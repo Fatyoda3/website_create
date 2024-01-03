@@ -17,37 +17,70 @@ setTimeout(()=>{
 
 console.log('end'); */
 
-function register(cb) {
-  setTimeout(() => {
-    console.log("registered "), cb();
-  }, 2000);
+async function Auth() {
+  await register();
+  await otp();
+  await userLogin();
+  await greet();
+
 }
 
-function otp(cb) {
-  setTimeout(() => {
-    console.log("otp sent");
-    cb();
-  }, 2000);
+function register() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("registered ");
+
+      resolve();
+    }, 2000);
+  });
 }
 
-function userLogin(cb) {
-  setTimeout(() => {
-    console.log("login successful");
-    cb();
-  }, 4000);
+function otp() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      return reject('sorry the otp could not be sent');
+
+      console.log("otp sent");
+     /*  resolve(); */
+    }, 2000);
+    
+  });
+}
+
+function userLogin() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("login successful");
+      resolve();
+    }, 4000);
+  });
 }
 
 function greet() {
-  setTimeout(() => {
-    console.log("hello world ");
-
-  }, 3000);
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("hello world ");
+      resolve();
+    }, 3000);
+  });
 }
+
 //callback hell
-register(() => {
+/* register(() => {
   otp(() => {
     userLogin(() => {
       greet();
     });
   });
 });
+ */
+
+register().then(otp).then(userLogin).then(greet).catch((e)=>{
+  console.log(e);
+});// daisy chaining
+
+
+/* Auth().catch((e) =>{
+  console.log(e);
+}); */
+

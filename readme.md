@@ -4,14 +4,4 @@ i think i am making some sort of progress
 i wish i can get a entry level programming job
 hello
 
-i
-
-dont what day its
-
-today
-
-just
-
-made
-
-something
+i don't know what day it's today just mad something
