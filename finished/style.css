@@ -1,0 +1,60 @@
+/*@keyframes leftSlide {
+  from {
+    rotate: 0;
+  }
+
+  to {
+    rotate: 320deg;
+  }
+}
+@keyframes right {
+  from {
+    transform-origin: bottom;
+  }
+  to {
+    transform-origin: top;
+  }
+}
+.animate {
+  animation: leftSlide 1s ease-in-out;
+    animation-iteration-count: 3;
+}
+
+.x{
+    background-color: rgba(220, 136, 136, 0.655);
+}*/
+/* * {
+  overflow: hidden;
+}
+.box {
+  width: 250px;
+  height: 250px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid;
+  border-color: red orange rgb(0, 255, 51) orange ;
+  margin: 5rem 5rem;
+  animation: DivAnimation 2s ease-in-out infinite;
+}
+
+@keyframes DivAnimation {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+.circle {
+  width: 150px;
+  height: 150px;
+
+  border-radius: 75px;
+  border: 5px solid;
+  border-color: red orange red orange;
+
+  animation: DivAnimation 1s ease-in-out infinite;
+}
+ */

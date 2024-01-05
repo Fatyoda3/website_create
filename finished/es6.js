@@ -55,3 +55,4 @@ let newArray = duplicate.map((e) => e + 2);
 let EvenNumberOnly = duplicate.filter((e) => e % 2 == 0);
 
 // console.log(...EvenNumberOnly);
+

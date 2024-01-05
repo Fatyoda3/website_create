@@ -1,0 +1,37 @@
+.title_heading {
+  background-image: linear-gradient(
+    rgb(120, 95, 48),
+    rgb(73, 188, 73),
+    rgb(179, 126, 135),
+    rgb(208, 66, 66)
+  );
+
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+@keyframes diff {
+/*   0%,100% {
+    text-align: right;
+  }
+  25%,75%{
+    text-align: center;
+  }
+  50% {
+    text-align: left;
+  } */
+
+  from{
+    text-align: center;
+
+  }
+
+  to{
+    text-align: right;
+  }
+}
+
+#difficulty {
+
+  /* animation: diff 1s ease-in-out 10s  infinite; */
+}

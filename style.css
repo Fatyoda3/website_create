@@ -1,60 +1,67 @@
-/*@keyframes leftSlide {
-  from {
-    rotate: 0;
-  }
-
-  to {
-    rotate: 320deg;
-  }
-}
-@keyframes right {
-  from {
-    transform-origin: bottom;
-  }
-  to {
-    transform-origin: top;
-  }
-}
-.animate {
-  animation: leftSlide 1s ease-in-out;
-    animation-iteration-count: 3;
-}
-
-.x{
-    background-color: rgba(220, 136, 136, 0.655);
-}*/
-/* * {
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
-.box {
-  width: 250px;
-  height: 250px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 5px solid;
-  border-color: red orange rgb(0, 255, 51) orange ;
-  margin: 5rem 5rem;
-  animation: DivAnimation 2s ease-in-out infinite;
-}
-
-@keyframes DivAnimation {
+@keyframes rotate {
   from {
-    rotate: 0deg;
+    transform: rotate3d(1, 0, 1, 0deg);
+    background-image: -moz-linear-gradient(
+      to right,
+      rgb(148, 8, 148),
+      rgb(95, 176, 216)
+    );
   }
   to {
-    rotate: 360deg;
+    transform: rotate3d(1, 0, 1, 360deg);
+    background-image: -moz-linear-gradient(
+      to right,
+      rgb(95, 176, 216),
+      rgb(120, 22, 109)
+    );
   }
 }
-.circle {
-  width: 150px;
-  height: 150px;
 
-  border-radius: 75px;
-  border: 5px solid;
-  border-color: red orange red orange;
-
-  animation: DivAnimation 1s ease-in-out infinite;
+@keyframes Color {
+  from {
+    background-color: rgb(187, 69, 69);
+  }
+  to {
+    background-color: green;
+  }
 }
- */
+
+.main {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parent {
+  width: 200px;
+  height: 200px;
+  border: 5px groove orange;
+  margin: 25px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotate 3s ease-in-out infinite;
+}
+.child {
+  width: 100px;
+  height: 100px;
+  border: 5px groove orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotate 1.5s ease-in-out infinite;
+}
+.grandC {
+  width: 50px;
+  height: 50px;
+  border: 5px groove orange;
+
+  animation: rotate 2s ease-in-out infinite;
+}
+
