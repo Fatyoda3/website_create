@@ -1,24 +1,32 @@
-const inputField = document.getElementById("input");
+const display = document.getElementById("display");
 
-let AppendToDisplay = (x) => {
-  let currentValue = inputField.value;
+const append = (value) => {
+  const lastChar = display.value.slice(-1);
+  const ops = ['+', '-', '*', '/'];
 
-  // Clear the display if the last character is an operator and new input is also an operator
-  if (['+', '-', '*', '/'].includes(x) && ['+', '-', '*', '/'].includes(currentValue.slice(-1))) {
-    // Do nothing if the last character and the new input are both operators
-    return;
-  }
+  if (ops.includes(value) && ops.includes(lastChar)) return;
 
-  // Append the new symbol
-  inputField.value += x;
+  display.value += value;
 };
 
-let ClearDisplay = () => (inputField.value = "");
+const clearDisplay = () => {
+  display.value = "";
+};
 
-let CalculateDisplay = () => {
+const calculate = () => {
   try {
-    inputField.value = eval(inputField.value);
-  } catch (error) {
-    inputField.value = "Error";
+    const result = safeEval(display.value);
+    display.value = result;
+  } catch {
+    display.value = "Error";
   }
 };
+
+// Safe evaluation
+function safeEval(expr) {
+  // Only allow digits, operators and decimal points
+  if (!/^[\d+\-*/.() ]+$/.test(expr)) throw "Invalid characters";
+
+  // Create a new function (safer than eval)
+  return Function('"use strict"; return (' + expr + ')')();
+}

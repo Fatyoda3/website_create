@@ -1,0 +1,150 @@
+/* Funky Glassmorphism Theme */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@500&display=swap');
+
+:root {
+  --blur-bg: rgba(255, 255, 255, 0.15);
+  --text-color: #ffffff;
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --neon: #00f7ff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(135deg, #ff00c8, #00ffe1);
+  min-height: 100vh;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  text-align: center;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: var(--blur-bg);
+  border: 2px solid var(--glass-border);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.player-input {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  width: 60%;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 12px;
+  background: var(--neon);
+  color: #000;
+  font-size: 1rem;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px var(--neon), 0 0 20px var(--neon);
+}
+
+#themeToggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.game {
+  display: none;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.choice {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid var(--neon);
+  font-size: 2rem;
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.choice:hover {
+  background: var(--neon);
+  color: black;
+  transform: scale(1.2);
+}
+
+.result {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  padding: 10px;
+  border-top: 1px dashed white;
+  margin-top: 20px;
+}
+
+body.dark {
+  background: linear-gradient(135deg, #000000, #333333);
+  color: #ffffff;
+}
+
+body.dark .container {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+body.dark button {
+  background: #00ffcc;
+  color: #000;
+}
+
+body.dark .choice {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #00ffcc;
+}
+
+body.dark .choice:hover {
+  background: #00ffcc;
+  color: black;
+}

@@ -40,7 +40,7 @@ function otp() {
     setTimeout(() => {
       return reject('sorry the otp could not be sent');
 
-      console.log("otp sent");
+      // console.log("otp sent");
      /*  resolve(); */
     }, 2000);
     

@@ -140,7 +140,7 @@ switch (day) {
     break;
 } */
 
-/*    false.if in a if statement this arguments are passed they take boolean 
+/*    false. in a if statement this arguments are passed they take boolean 
 value of false
     0 (zero)
 

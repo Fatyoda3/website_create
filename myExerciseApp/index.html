@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exercise Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="tracker">
+    <h1>🏋️ Exercise Tracker</h1>
+
+    <label for="exerciseDropdown">Choose Exercise:</label>
+    <select id="exerciseDropdown">
+      <option value="Pushups">Pushups</option>
+      <option value="Squats">Squats</option>
+      <option value="Plank">Plank</option>
+      <option value="Jumping Jacks">Jumping Jacks</option>
+      <option value="Burpees">Burpees</option>
+    </select>
+
+    <input type="number" id="repInput" placeholder="Enter reps" min="1" />
+    <button id="saveBtn">Save</button>
+
+    <div id="todayStats">Today: 0 reps</div>
+    <div id="weekStats">Week: 0 reps</div>
+    <div id="streak">🔥 Streak: 0 days</div>
+
+    <h2>⏱ Timer</h2>
+    <button id="startTimerBtn">Start 1-Minute Timer</button>
+    <div id="timerDisplay">00:00</div>
+  </div>
+</body>
+</html>

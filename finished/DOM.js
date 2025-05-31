@@ -114,7 +114,7 @@ mango.classList.remove('tasty');
 
 //DOM element creation
 
-const body = document.body;
+// const body = document.body;
 
 /* let div = document.createElement("div");
 
