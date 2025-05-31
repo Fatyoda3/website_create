@@ -39,7 +39,7 @@ You're planting seeds. One day, you'll be back here smiling at how far you've co
 
 ---
 
-> 👾 Past Me: "just mad something"
+> 👾 Past Me: "just made something"
 >  
 > 💼 Present Me: "just made it."
 
